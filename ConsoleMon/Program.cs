@@ -1,4 +1,4 @@
-﻿namespace console_app
+﻿namespace ConsoleMon
 {
     internal class Program
     {
