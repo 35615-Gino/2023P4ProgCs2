@@ -13,6 +13,8 @@ namespace ConsoleMon
         public int energy;
         string name;
 
+        private List<Skill> skill;
+
 
         public void TakeDamage(int damage)
         {

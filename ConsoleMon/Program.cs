@@ -36,7 +36,7 @@ namespace ConsoleMon
             skill.UseOn(targetMon, casterMon);
 
             Console.WriteLine(targetMon.health == -100);
-
+            Console.WriteLine(casterMon.energy == -20); 
         }
     }
 }
