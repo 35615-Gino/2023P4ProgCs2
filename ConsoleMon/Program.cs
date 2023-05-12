@@ -10,6 +10,7 @@ namespace ConsoleMon
             Program.TestConsoleMonFunctions();
             Program.TestSkillFunctions();
             Program.TestConstructors();
+            Program.TestFactoryFunctions();
         }
 
         static void TestConsoleMonFunctions()
@@ -60,5 +61,11 @@ namespace ConsoleMon
 
         }
 
+        static void TestFactoryFunctions()
+        {
+            Console.WriteLine("TestFactoryFunctions");
+            ConsoleMonFactory factory = new ConsoleMonFactory();
+            factory.Load("monsterdata.txt");
+        }
     }
 }
