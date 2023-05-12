@@ -9,23 +9,38 @@ namespace ConsoleMon
 
     internal class ConsoleMon
     {
-        public int health;
-        public int energy;
-        string name;
+        internal int health;
+        internal int energy;
+        internal string name;
 
         private List<Skill> skill;
 
+        internal Element weakness;
+        
 
-        public void TakeDamage(int damage)
+        internal void TakeDamage(int damage)
         {
             this.health -= damage;
         }
 
-        public void DepleteEnergy(int energy)
+        internal void DepleteEnergy(int energy)
         {
             this.energy -= energy;
         }
-        
-    }
 
+        public ConsoleMon()
+        {
+
+        }
+
+        internal ConsoleMon(int health, int energy, string name, Element weakness)
+        {
+            //opdracht 13
+            this.energy= energy;
+            this.name= name;
+            this.weakness= weakness;
+            this.health= health;
+
+        }
+    }
 }
