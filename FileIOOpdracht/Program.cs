@@ -18,7 +18,7 @@ namespace FileIOOpdracht
             string[] lines = {"", "New line 1", "New line 2" };
             File.AppendAllLines("C:\\Users\\ginos\\OneDrive\\Documenten\\2023P4ProgCs2\\FileIOOpdracht\\mijnnieuwefile.txt", lines);
 
-            Directory.CreateDirectory("output");    
+            Directory.CreateDirectory("output"); 
         }
     }
 }
