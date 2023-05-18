@@ -15,7 +15,6 @@ namespace ConsoleMon
 
         public Element element { get; set; }
 
-
         internal void UseOn(ConsoleMon target, ConsoleMon caster)
         {
             caster.DepleteEnergy(energyCost);

@@ -13,7 +13,7 @@ namespace ConsoleMon
         public int energy { get; set; }
         public string name { get; set; }
 
-        private List<Skill> skill;
+        public List<Skill> skills { get; set; }
 
         public Element weakness;
         
@@ -30,7 +30,7 @@ namespace ConsoleMon
 
         public ConsoleMon()
         {
-
+           
         }
 
         internal ConsoleMon(int health, int energy, string name, Element weakness)
