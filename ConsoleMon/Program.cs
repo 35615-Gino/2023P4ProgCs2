@@ -109,7 +109,13 @@ namespace ConsoleMon
         static void TestArena()
         {
             Console.WriteLine("TestArena");
-            Arena arema = new Arena();
+            
+            Arena arena = new Arena();
+            ConsoleMon fighterA= new ConsoleMon();
+            ConsoleMon fighterB= new ConsoleMon();
+
+            arena.Fight(fighterA, fighterB);
+            Console.ReadKey();
         }
 
     }
