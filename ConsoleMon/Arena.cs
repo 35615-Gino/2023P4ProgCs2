@@ -11,15 +11,13 @@ namespace ConsoleMon
     {
         internal void Fight(ConsoleMon fighterA, ConsoleMon fighterB)
         {
-            int aanval1 = Convert.ToInt32(fighterA.skills);
-            fighterB.TakeDamage(aanval1);
+            fighterA.skills[0].UseOn(fighterB, fighterA);
             Thread.Sleep(1000);
-            Console.WriteLine($"{fighterA.name} valt {fighterB.name} aan met een schade van {aanval1}!");
+            Console.WriteLine($"{fighterA.name} valt {fighterB.name} aan!");
             Thread.Sleep(1000);
             // Vechter 2 valt vechter 1 aan
-            int aanval2 = Convert.ToInt32(fighterB.skills);
-            fighterA.TakeDamage(aanval2);
-            Console.WriteLine($"{fighterB.name} valt {fighterA.name} aan met een schade van {aanval2}!");
+            fighterB.skills[0].UseOn(fighterA, fighterA);
+            Console.WriteLine($"{fighterB.name} valt {fighterA.name} aan !");
             Thread.Sleep(1000);
             // Console-uitvoer van het resultaat van de aanvallen
             Console.WriteLine($"{fighterA.name} heeft nu {fighterA.health} HP.");

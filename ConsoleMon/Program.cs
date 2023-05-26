@@ -14,6 +14,7 @@ namespace ConsoleMon
             Program.TestCopySkill();
             Program.TestCopyConsoleMon();
             Program.TestArena();
+            Program.Map();
         }
 
         static void TestConsoleMonFunctions()
@@ -109,14 +110,25 @@ namespace ConsoleMon
         static void TestArena()
         {
             Console.WriteLine("TestArena");
-            
+
+            ConsoleMonFactory factory = new ConsoleMonFactory();
+            List<ConsoleMon> templates = factory.LoadJson("monsterdata.json");
+
             Arena arena = new Arena();
-            ConsoleMon fighterA= new ConsoleMon();
-            ConsoleMon fighterB= new ConsoleMon();
+            ConsoleMon fighterA = templates[0];
+            ConsoleMon fighterB = templates[1];
 
             arena.Fight(fighterA, fighterB);
             Console.ReadKey();
         }
 
+
+
+        //static void Map()
+        //{
+          //  Console.WriteLine("help");
+            //Map map = new Map();
+            //map.MapArea();
+        //}
     }
 }
