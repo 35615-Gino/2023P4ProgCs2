@@ -14,7 +14,6 @@ namespace ConsoleMon
             Program.TestCopySkill();
             Program.TestCopyConsoleMon();
             Program.TestArena();
-            Program.Map();
         }
 
         static void TestConsoleMonFunctions()

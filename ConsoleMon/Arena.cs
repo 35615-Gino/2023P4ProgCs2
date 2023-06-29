@@ -16,7 +16,7 @@ namespace ConsoleMon
             Console.WriteLine($"{fighterA.name} valt {fighterB.name} aan!");
             Thread.Sleep(1000);
             // Vechter 2 valt vechter 1 aan
-            fighterB.skills[0].UseOn(fighterA, fighterA);
+            fighterB.skills[0].UseOn(fighterA, fighterB);
             Console.WriteLine($"{fighterB.name} valt {fighterA.name} aan !");
             Thread.Sleep(1000);
             // Console-uitvoer van het resultaat van de aanvallen
